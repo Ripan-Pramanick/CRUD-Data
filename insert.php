@@ -9,7 +9,7 @@ if(isset($_POST["submit_btn"])){
     $query = "INSERT INTO `student` (`Id`, `Name`, `Age`, `Phone`) VALUES (Null, '$name', '$age', '$phoneno')";
     $result = mysqli_query($conn, $query);
     if(!$result){
-        echo "Data Insert Unsuccessfully";
+        echo "Data Insert Successfully";
     }
 }else{
     echo "Form not submitted properly.";
@@ -37,7 +37,7 @@ if(isset($_POST["submit_btn"])){
     <input type="number" name="phone" id="Phone" required>
     <br>
     <button type="submit" name="submit_btn" value="save">Submit</button>
-
+    <button><a href="view.php">View</a></button>
     </form>
 </body>
 </html>
