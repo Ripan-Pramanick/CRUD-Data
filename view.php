@@ -9,7 +9,7 @@
 </head>
 <body>
     <a href="insert.php">Insert</a>
-    <a href="edit.php">Edit</a>
+    <a href="update.php">Update</a>
     <a href="delete.php">Delete</a>
     <table>
         <tr>
@@ -32,7 +32,8 @@
                     <td><?php echo $row['Name']; ?></td>
                     <td><?php echo $row['Age']; ?></td>
                     <td><?php echo $row['Phone']; ?></td>
-                    <td><a href="delete.php?id=<?php echo $row['Id']; ?>">Delete</a></td>
+                    <td><a href="delete.php?id=<?php echo $row['Id']; ?>">Delete</a>
+                <a href="edit.php?id=<?php echo $row['Id']; ?>">Edit</a></td>
                 </tr>
                 <?php
         }
